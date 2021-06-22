@@ -1,0 +1,182 @@
+.container{
+ 
+    padding: 0;
+}
+
+.container-fluid {
+   padding: 0px;
+   display: flex;
+}
+
+.bg-lblue {
+    background-color: #4cd4fb;
+}
+
+.clr-lblue {
+    color: #4cd4fb;
+}
+
+.navbar-toggler-icon {
+    margin: 0;
+}
+
+.container-description {
+display: flex;
+/* border: 1px solid white; */
+text-align: center;
+margin: 50px 0px;
+}
+
+.logo-img {
+    width: 250px;
+    height: 250px; 
+}
+
+.right-desc-content, .left-desc-content {
+/* border: 1px solid white; */
+    margin: 0;
+ text-align: center;
+
+}
+
+.right-desc-content{
+padding-top: 50px;
+   
+}
+
+a, p, h2, h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-link {
+    text-decoration: underline;
+    color: white;
+}
+
+hr {
+    margin: 0 auto;
+    display: block;
+}
+
+.card-container {
+    margin-top: 50px;
+}
+
+.btn{
+    transition: 0.7s;
+}
+
+
+.btn:hover{
+    transform:rotate(360deg);
+
+}
+
+.navbar-nav a span:first-child {
+    display: inline-block;
+  }
+
+.navbar-nav a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+   
+  .navbar-nav a span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+  }
+
+  .navbar-nav a span {
+    transition: transform 0.2s ease-out
+  }
+   
+  .navbar-nav a:hover span:first-child {
+    transform: translateX(-130%);
+  }
+   
+  .navbar-nav a:hover span:last-child {
+    transform: none;
+  }
+
+  .button{
+      border: black 1px solid;
+      border-radius: 50%;
+      background-color: transparent;
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+      margin: 20px;
+      display: inline-block;
+      font-family: 'Roboto', sans-serif;;
+  }
+
+  .socialMediaLink{
+      margin: 0;
+  
+  }
+
+  .socialMediaLink li{
+      text-decoration: none;
+      list-style: none;
+      margin-top: 12px;
+  }
+
+  .socialMediaIcon{
+      transition: 0.5s;
+  }
+  .socialMediaIcon:hover{
+      transform: rotate(10deg);
+  }
+
+.opacity{
+    opacity: 20%;
+}
+
+@media (max-width:992px) {
+   
+   hr{
+        width: 200px;
+  }
+
+  .socialMediaIcon:hover{
+    transform: none;}
+
+  .btn:hover{
+    transform:none;}
+
+    .navbar-nav a span:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: none;
+      }
+    
+      .navbar-nav a span {
+        transition: none
+      }
+       
+      .navbar-nav a:hover span:first-child {
+        transform: none;
+      }
+       
+      .nav-link img {
+        visibility: hidden;
+      }
+ 
+}
+
+
+
